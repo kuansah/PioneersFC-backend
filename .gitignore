@@ -1,0 +1,8 @@
+node_modules/
+pioneers_fc.db
+pioneers_fc.db-shm
+pioneers_fc.db-wal
+.env
+*.log
+
+test.sqlite
