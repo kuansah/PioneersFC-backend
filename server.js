@@ -12,7 +12,7 @@ const JWT_SECRET =
 app.use(cors());
 app.use(express.json({ limit: "10mb" }));
 
-const db = new DatabaseSync("pioneers_fc.db");
+const db = new DatabaseSync(process.env.DB_PATH || "pioneers_fc.db");
 
 db.exec("PRAGMA journal_mode = WAL;");
 db.exec("PRAGMA foreign_keys = ON;");
